@@ -99,20 +99,20 @@ const Contact = () => {
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
                                     <label htmlFor="name" className="block text-xs md:text-sm font-medium text-white/80 mb-2">Name</label>
-                                    <input type="text" id='name' name="name" value={formData.name} onChange={handleChange} className='w-full text-sm lg:text-[16px] px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300' placeholder='Your name'/>
+                                    <input type="text" id='name' name="name" value={formData.name} onChange={handleChange} className='w-full text-sm lg:text-[16px] px-3 py-2 md:p-4 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300' placeholder='Your name'/>
                                 </div>
 
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2">Email</label>
-                                    <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder='your.email@example.com' className='w-full text-sm lg:text-[16px] px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-3000' />
+                                    <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder='your.email@example.com' className='w-full text-sm lg:text-[16px] px-3 py-2 md:p-4 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-3000' />
                                 </div>
 
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-medium text-white/80 mb-2"> Message</label>
-                                    <textarea name="message" id="message" value={formData.message} onChange={handleChange} rows={5} placeholder='Tell me about your project...' className='w-full text-sm lg:text-[16px] px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 resize-none'  />
+                                    <textarea name="message" id="message" value={formData.message} onChange={handleChange} rows={5} placeholder='Tell me about your project...' className='w-full text-sm lg:text-[16px] px-3 py-2 md:p-4  bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 resize-none'  />
                                 </div>
 
-                                <button type="submit" className='w-full px-6 py-3 bg-linear-to-r from-primary/10 to-primary text-white font-medium rounded-xl hover:shadow-2xl hover:shadow-primary/30 active:scale-96 transition-all duration-300 flex items-center justify-center gap-2 group'>
+                                <button type="submit" className='w-full px-6 py-3 md:py-4 bg-linear-to-r from-primary/10 to-primary text-white font-medium rounded-xl hover:shadow-2xl hover:shadow-primary/30 active:scale-96 transition-all duration-300 flex items-center justify-center gap-2 group'>
                                     <span>Send Message</span>
                                     <Send className='w-5 h-5 group-hover:translate-x-1 transition-transform duration-300' />
                                 </button>
@@ -132,7 +132,9 @@ const Contact = () => {
 
 
                     <FadeIn delay={300}>
-                        <div className="hidden lg:block text-center">A PICTURE WILL BE HERE</div>
+                        <div className="hidden lg:flex text-center rounded-2xl">
+                            <img src="./images/arad_flyer.png" alt="" className='rounded-2xl hover:scale-99 transition-all duration-300 md:max-w-135 ml-auto' />
+                        </div>
                     </FadeIn>
                 </div>
             </div>

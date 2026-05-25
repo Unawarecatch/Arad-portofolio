@@ -22,6 +22,14 @@ export const SOCIAL_LINKS = [
     platform: "twitter",
     url: "",
   },
+  {
+    platform: "pinterest",
+    url: "",
+  },
+  {
+    platform: "dribble",
+    url: "",
+  }
 ];
 
 export const STATS = [

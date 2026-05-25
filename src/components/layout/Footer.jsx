@@ -1,7 +1,7 @@
 import React from 'react';
 import { PERSONAL_INFO, SOCIAL_LINKS } from '../../utils/constants';
 import { Mail } from 'lucide-react';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPinterest, FaDribbble } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import FadeIn  from '../animations/FadeIn';
@@ -11,7 +11,9 @@ const Footer = () => {
   const socialIcons = {
     github: FaGithub,
     linkedin: FaLinkedin,
-    twitter: FaXTwitter
+    twitter: FaXTwitter,
+    pinterest: FaPinterest,
+    dribble: FaDribbble
   };
 
 
@@ -62,7 +64,7 @@ const Footer = () => {
                           rel="noopener noreferrer"
                           className="group rounded-xl border border-white/10 bg-white/5 p-3 md:p-4 transition-all duration-300 hover:scale-110 hover:border-primary/50 hover:bg-white/10 active:bg-white/10 active:border-primary/50 " 
                         >
-                          <Icon className="text-2xl text-white transition-colors group-hover:text-primary" />
+                          <Icon className="text-2xl text-white transition-colors group-hover:text-primary group-active:text-primary" />
                         </a>
                       );
                     })}
