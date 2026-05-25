@@ -22,8 +22,8 @@ const Footer = () => {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 opacity-30 rounded-full" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-16 pb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-2 lg:mb-8">
           <FadeIn delay={0}>
             <div>
               <h3 className="text-xl md:text-2xl font-bold bg-linear-to-r from-primary/80 via-primary to-primary/80 bg-clip-text text-transparent mb-4">
@@ -34,7 +34,7 @@ const Footer = () => {
               </p>
 
               <div className="space-y-3">
-                <a href={`mailto:${PERSONAL_INFO.email}`} className='group flex items-center gap-3 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 active:border-primary/30 transition-all duration-300'>
+                <a href={`mailto:${PERSONAL_INFO.email}`} className='group flex items-center gap-3 px-4 py-2 md:py-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 active:border-primary/30 transition-all duration-300'>
                   <div className="p-2 md:p-3 bg-primary/10 rounded-lg">
                     <Mail className='w-4 h-4 md:w-6 md:h-6 text-primary' />
                   </div>
@@ -78,7 +78,7 @@ const Footer = () => {
           <div className="pt-4 mb-6 md:pt-6 border-t border-white/10">
             <div className="flex flex-col items-center justify-between gap-4">
               <p className="text-white/50 text-xs md:text-sm">
-                &copy;{new Date().getFullYear()} {PERSONAL_INFO.name}. All right reserved.
+                &copy;{new Date().getFullYear()} {PERSONAL_INFO.name} (Arad). All right reserved.
               </p>
             </div>
           </div>
