@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0}>
+          <FadeIn delay={100}>
             <div className='md:text-right'>
               <h4 className="text-white font-semibold mb-6 text-sm md:text-lg">Connect with me</h4>
               <div className="flex gap-4 md:justify-end">
@@ -72,9 +72,10 @@ const Footer = () => {
             </div>
           </FadeIn>
         </div>
-
-        <FadeIn delay={0}>
-          <div className="pt-4 md:pt-8 border-t border-white/10">
+      </div>
+      
+      <FadeIn delay={0}>
+          <div className="pt-4 mb-4 md:pt-6 border-t border-white/10">
             <div className="flex flex-col items-center justify-between gap-4">
               <p className="text-white/50 text-xs md:text-sm">
                 &copy;{new Date().getFullYear()} {PERSONAL_INFO.name}. All right reserved.
@@ -82,7 +83,6 @@ const Footer = () => {
             </div>
           </div>
         </FadeIn>
-      </div>
     </footer>
   )
 }
