@@ -35,7 +35,7 @@
 }
 
 .sub-heading {
-    @apply text-xl lg:text-5xl capitalize font-normal text-white leading-tight;
+    @apply text-xl md:text-3xl lg:text-5xl capitalize font-normal text-white leading-tight;
 }
 
     /* Custom Scrollbaaaar */

@@ -75,7 +75,7 @@ const Footer = () => {
       </div>
       
       <FadeIn delay={0}>
-          <div className="pt-4 mb-4 md:pt-6 border-t border-white/10">
+          <div className="pt-4 mb-6 md:pt-6 border-t border-white/10">
             <div className="flex flex-col items-center justify-between gap-4">
               <p className="text-white/50 text-xs md:text-sm">
                 &copy;{new Date().getFullYear()} {PERSONAL_INFO.name}. All right reserved.

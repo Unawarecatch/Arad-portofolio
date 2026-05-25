@@ -12,11 +12,11 @@ export const PERSONAL_INFO = {
 export const SOCIAL_LINKS = [
   {
     platform: "github",
-    url: "",
+    url: "https://github.com/Unawarecatch",
   },
   {
     platform: "linkedin",
-    url: "",
+    url: "https://www.linkedin.com/in/jesufemioadeniyi",
   },
   {
     platform: "twitter",

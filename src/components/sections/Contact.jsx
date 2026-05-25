@@ -70,7 +70,7 @@ const Contact = () => {
         };
 
     return (
-        <section id='contact' className='relative py-20 bg-black overflow-hidden'>
+        <section id='contact' className='relative py-20 md:pt-24 bg-black overflow-hidden'>
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 lg:left-1/6 w-96 h-96 lg:w-120 lg:h-120 bg-primary/10 rounded-full opacity-30 blur-3xl" />
                 <div className='absolute bottom-1/4 right-1/8 w-96 h-96 bg-primary/10 rounded-full opacity-30 blur-3xl lg:w-120 lg:h-120' />
@@ -98,21 +98,21 @@ const Contact = () => {
                         <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:max-w-140 mx-auto lg:mx-0">
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">Name</label>
-                                    <input type="text" id='name' name="name" value={formData.name} onChange={handleChange} className='w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300' placeholder='Your name'/>
+                                    <label htmlFor="name" className="block text-xs md:text-sm font-medium text-white/80 mb-2">Name</label>
+                                    <input type="text" id='name' name="name" value={formData.name} onChange={handleChange} className='w-full text-sm lg:text-[16px] px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300' placeholder='Your name'/>
                                 </div>
 
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2">Email</label>
-                                    <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder='your.email@example.com' className='w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300' />
+                                    <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder='your.email@example.com' className='w-full text-sm lg:text-[16px] px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-3000' />
                                 </div>
 
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-medium text-white/80 mb-2"> Message</label>
-                                    <textarea name="message" id="message" value={formData.message} onChange={handleChange} rows={5} placeholder='Tell me about your project...' className='w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 resize-none'  />
+                                    <textarea name="message" id="message" value={formData.message} onChange={handleChange} rows={5} placeholder='Tell me about your project...' className='w-full text-sm lg:text-[16px] px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 resize-none'  />
                                 </div>
 
-                                <button type="submit" className='w-full px-6 py-3 bg-linear-to-r from-primary/10 to-primary text-white font-medium rounded-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-2 group'>
+                                <button type="submit" className='w-full px-6 py-3 bg-linear-to-r from-primary/10 to-primary text-white font-medium rounded-xl hover:shadow-2xl hover:shadow-primary/30 active:scale-96 transition-all duration-300 flex items-center justify-center gap-2 group'>
                                     <span>Send Message</span>
                                     <Send className='w-5 h-5 group-hover:translate-x-1 transition-transform duration-300' />
                                 </button>

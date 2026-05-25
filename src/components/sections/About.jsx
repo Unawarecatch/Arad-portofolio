@@ -25,7 +25,7 @@ const About = () => {
     { name: 'UI/UX' },
   ]
 
-  return <section id='about' className='relative py-20 bg-black overflow-hidden'>
+  return <section id='about' className='relative py-20 md:pt-24 bg-black overflow-hidden'>
       <RadialGradientBackground variant='hero' />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ const About = () => {
 
               <FadeIn delay={100}>
                 <h2 className='sub-heading'>
-                  Crafting seamless digital experiences with modern design
+                  Crafting seamless digital experiences
                 </h2>
               </FadeIn>
 
