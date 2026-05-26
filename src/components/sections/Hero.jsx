@@ -13,7 +13,7 @@ import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-black ">
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-black">
       <RadialGradientBackground variant="hero" />
       
       {/* Content Container */}
@@ -160,10 +160,10 @@ const Hero = () => {
       {/* Scroll Indicato */}
       <button
         onClick={() => scrollToSection('about')}
-        className="absolute bottom-0 lg:bottom-0 left-1/2 -translate-x-1/2 animate-bounce"
+        className="hidden lg:flex absolute lg:bottom-20 left-1/2 -translate-x-1/2 animate-bounce"
         >
           <ChevronDown className="w-8 h-8 text-primary" />
-        </button>
+      </button>
     </section>
   )
 }

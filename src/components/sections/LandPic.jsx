@@ -1,10 +1,12 @@
 import React from 'react'
 import FadeIn from "../animations/FadeIn";
-import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
+import { ChevronDown } from "lucide-react";
+import { scrollToSection
+} from "../../hooks/useScrollSpy";
 
 const LandPic = () => {
     return (
-        <section>
+        <section className='relative'>
         <FadeIn delay={400}>
             <div className="relative max-w-100vh mt-5 overflow-hidden">
             <img src="/hero-pic.png" alt="Landing Image" className='w-full h-full' />
@@ -18,6 +20,14 @@ const LandPic = () => {
                 </FadeIn>
             
             </div>
+                
+             {/* Scroll Indicato */}
+            <button
+                onClick={() => scrollToSection('hero')}
+                className="hidden lg:flex absolute bottom-0 lg:bottom-0 left-1/2 -translate-x-1/2 animate-bounce"
+                >
+                <ChevronDown className="w-8 h-8 text-primary" />
+            </button>
         </FadeIn>
     </section>
    

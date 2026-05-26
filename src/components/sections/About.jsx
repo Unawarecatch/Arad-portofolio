@@ -25,12 +25,12 @@ const About = () => {
     { name: 'UI/UX' },
   ]
 
-  return <section id='about' className='relative py-20 md:pt-24 bg-black overflow-hidden'>
+  return <section id='about' className='relative py-20 pt-1 pb-4 md:pt-24 bg-black overflow-hidden'>
       <RadialGradientBackground variant='hero' />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 mb-20">
           {/* Left Column --Content */}
           <div className="flex flex-col gap-12 text-center lg:text-left">
             <div className="flex flex-col gap-8">
